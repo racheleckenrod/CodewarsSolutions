@@ -32,5 +32,6 @@ function sameCase(a, b){
 
   console.log(sameCase("p", "m"))
 
-//   I had lots of trouble with this one as I had forgotten my ()'s with the method(?)s I was using.. Took me looking
+//   I had lots of trouble with this one as I had forgotten my ()'s with the method(?)s 
+// I was using.. Took me looking
 // it up again to find out what my error was, as I was pretty sure of my logic...
