@@ -11,9 +11,9 @@ function between(a, b) {
     const array =[]
     let x = a
     for (i = a; i <= b; i++){
-        array.push(x) 
-         x += 1
-        
+        array.push(x++) 
+         
+        console.log(x)
     }return array  
   }
   
