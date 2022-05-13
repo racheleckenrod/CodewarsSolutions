@@ -81,3 +81,8 @@
 // and wasn't so much ope to working together as much as he wanted to figure out how to go through
 // his idea of how to solve it that ultimately didn't work and it was a LOOOOOng time spent
 // not realyy getting any better. had some other help too, like use .slice to solve this
+
+const eachCons = (array, num) => {
+    return Array.from({ length: array.length - num + 1 },
+                      (_, i) => array.slice(i, i + num))
+}
