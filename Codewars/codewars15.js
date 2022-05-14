@@ -82,7 +82,85 @@
 // his idea of how to solve it that ultimately didn't work and it was a LOOOOOng time spent
 // not realyy getting any better. had some other help too, like use .slice to solve this
 
-const eachCons = (array, num) => {
-    return Array.from({ length: array.length - num + 1 },
-                      (_, i) => array.slice(i, i + num))
+// const eachCons = (array, num) => {
+//     return Array.from({ length: array.length - num + 1 },
+//                       (_, i) => array.slice(i, i + num))
+// }
+
+// PREP
+// Parameters
+//  Array, number
+
+// Return a new array with old array number of elements, of  n number of length for each new
+// element 
+
+// Example
+// newArray = [1,2,3,], [2,3,4], [3,4,5] for given input of ([1,2,3,4,5],3 ).
+// ([1,2,3,4,5,6], 4) will produce [[1,2,3,4],[2,3,4,5],[3,4,5,6]].
+// empty array, will produce empty array no matter n, []
+
+// Pseudocode
+// function eachCons(array, n) {
+// 
+// }
+// for each iteration, push element to newArray, making a newElement of length n.
+// ([1,2,3,4], 3)
+
+// one answer that works:
+// function eachCons(array, n) {
+//   let newArr=[]
+//   let iterArr=[]
+//   let last_element=array.slice(-1)[0] 
+//   let last_element_index=array.indexOf(last_element,array.length-1)
+//   if(array.length==0) return []
+//   for(let i=0;i<=last_element_index ;i++){
+//       newArr.push(array[i])
+//     if(newArr.length==n){
+//       iterArr.push([...newArr])
+//       newArr.shift()
+//     }
+//   }
+//   return iterArr;
+// }
+// function eachCons(array, n){ 
+//     // let e = array.slice(-1)[0]    e - n + 1
+//     let e = array.length
+//     let midArray = []
+//     let newArray = []
+
+//     for(let i = 0; i < e - n + 1; i++){
+       
+//         // let newArray = []
+   
+//         for(let j = 0; j < n; j++){
+           
+//         midArray.push(array[j])
+//         // newArray.push(array[i])
+        
+//         }
+//         console.log("test1", midArray)
+//         // console.log('test1a',newArray)
+        
+            
+//             // midArray = []
+//             // newArray.push([midArray[i]])
+//         // midArray.push(newArray)
+//         // console.log("test2", newArray)
+
+//     }console.log('test3', midArray)
+// }
+// eachCons([2,4,6,8,10,8], 3)
+
+// slice
+function eachCons(array, n){ 
+    let e
+e = array.length
+let newArray = []
+
+for(i = 0; i < e - n + 1; i++)
+
+newArray.push(array.slice(i, i + n));
+return newArray
 }
+
+eachCons([2,4,6,8,10,8], 3)
