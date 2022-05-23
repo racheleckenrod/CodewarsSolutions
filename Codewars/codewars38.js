@@ -7,24 +7,3 @@
 var rooms = Object.assign({}, Array.from({length:3}, _ => Object.assign({},[{name: `room`}, {description: `square`}, {completed: true}])))
 
 
-
-{
-    room1 = {
-    name: "first one",
-    description: "pitch black",
-    completed: true,
-    }
-  
-    room2 = {
-      name: "second one",
-      description: "getting brighter",
-      completed: true,
-    } 
-  
-    room3 = {
-      name: "third one",
-      description: "sunny day",
-      completed: false,
-    }
-  
-  }
