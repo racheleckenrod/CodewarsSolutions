@@ -12,7 +12,7 @@
 // Parameters: will take in an array of numbers
 // Return either the square root of the number - if % ===0 else square it. 
 // Examples- 49 will return 7, where as 7 will return 49.
-// Pseudocode: seems fairly straightforward- a conditional running through the array to check foe square root % === 0, if so do it else, square it. math.sqrt? yep. seems to be.
+// Pseudocode: seems fairly straightforward- a conditional running through the array to check for square root % === 0, if so do it else, square it. math.sqrt? yep. seems to be.
 
 function squareOrSquareRoot(array) {
     for(let i = 0; i < array.length; i++){
