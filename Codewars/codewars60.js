@@ -33,15 +33,27 @@
     // return an array containing all of the strings in the input array except those that match strings in geese
 //   };
 
+// function gooseFilter (birds) {
+//     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+//     let filteredArr = birds
+//   for(let i = 0; i < geese.length; i++){
+//       filteredArr = filteredArr.filter(bird => bird !== geese[i])
+
+//   }
+
+//   return filteredArr
+//     // return an array containing all of the strings in the input array except those that match strings in geese
+//   };
+
 function gooseFilter (birds) {
     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-    let filteredArr = birds
+    
   for(let i = 0; i < geese.length; i++){
-      filteredArr = filteredArr.filter(bird => bird !== geese[i])
+      birds = birds.filter(bird => bird !== geese[i])
 
   }
 
-  return filteredArr
+  return birds
     // return an array containing all of the strings in the input array except those that match strings in geese
   };
 
