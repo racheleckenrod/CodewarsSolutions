@@ -7,3 +7,6 @@ class Kata {
       return length * width * height
     }
   }
+
+
+//   I don't know what kind of set up this is but I got a correct answer
