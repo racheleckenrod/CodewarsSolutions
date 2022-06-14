@@ -15,3 +15,7 @@
 // six_toast(12) == 6
 // Good luck!
 
+function sixToast(num) {
+    // you code here
+    return Math.abs(num - 6)
+  }
