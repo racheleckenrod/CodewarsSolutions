@@ -12,3 +12,8 @@ function hero(bullets, dragons){
     }
     }
     
+    // another way from the solutions: 
+    // function hero(bullets, dragons){
+    //     return bullets >= dragons * 2
+    //   }
+    //   I like this method of the resolution of the conditional returning true on its own... maybe if I had done some pseudocode I would have come up with not only better code, but also gotten it on the first try instead of having to change the multiplier to division. YIKES!
