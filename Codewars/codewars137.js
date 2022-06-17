@@ -237,14 +237,23 @@ function SubtractSum(n){
     do{let sum = 0
     
     sum = n.toString().split('').reduce((acc, c) => +acc + +c,0)
-    console.log("sum", sum)
-    console.log(n)
+    // console.log("sum", sum)
+    // console.log(n)
     newN = n - sum
     n = newN
     }while(newN > 100)
-
-    console.log(newN)
+    if(fruit[newN] === "apple"){
+        console.log(newN)
+    }
+    console.log(fruit[newN])
     return fruit[newN]
   }
 
-  console.log(SubtractSum(22))
+  console.log(allNumbers(SubtractSum))
+
+  function allNumbers(callback){
+    for(let i = 10; i < 10000; i++){
+        callback(i)
+    }return "done"
+  }
+
