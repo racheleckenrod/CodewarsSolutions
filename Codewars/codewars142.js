@@ -22,3 +22,8 @@
             return true
           }
         }
+
+        // function xor(a, b) {
+        //     return a != b;
+        //   }
+        //   I wanted to but couldn't come up with this solution on my own today- instead of getting smaller and refactored into this one, I kept adding more code to get it to pass the tests. It sure seemed to me that it could be done very simply but this solution did not come to me. I started with only the first conditional and then it wanted more...
