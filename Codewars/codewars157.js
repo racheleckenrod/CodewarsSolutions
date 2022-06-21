@@ -23,3 +23,5 @@ function strCount(str, letter){
         }
     }return sum
   }
+
+//   needed to set the sum equal to zero... otherwise would have gottena first try..
