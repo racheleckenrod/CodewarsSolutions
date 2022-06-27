@@ -32,3 +32,5 @@ function drawStairs(n) {
           return output.slice(0,-1)
     }
 console.log(drawStairs(3))
+
+// well I really dont know exactly why this works, to tell the truth... I just tried the i = 2 in the for loop and it worked... I did look at the solutions to get the idea to slice off the last newline... I needed that contribution to get my code to pass the tests but I must day that I am (probably) overly PROUD of myself on this one... I took a couple breaks but ultimately got it done. and that is such good news...
