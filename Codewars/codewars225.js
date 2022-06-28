@@ -7,21 +7,21 @@
 // // Logs 'True' to the console.
 
 
-function _if(bool, func1, func2) {
-    if(bool === true){
-        func1()
-    }else{
-        func2()
-    }
-    // ...
-  }
+// function _if(bool, func1, func2) {
+//     if(bool === true){
+//         func1()
+//     }else{
+//         func2()
+//     }
+//     // ...
+//   }
 
-  func1();{
-    console.log("True")
-  }
-  func2();{
-    console.log("false")
-  }
+//   func1();{
+//     console.log("True")
+//   }
+//   func2();{
+//     console.log("false")
+//   }
 
   function _if(bool, func1, func2) {
     return bool ? func1() : func2();
