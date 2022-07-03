@@ -15,3 +15,6 @@
 
 
 const a = []
+
+// I see could also be a string zero "0"
+// I also see an empty string- or rather a string with a space value in  it I did try the empty array, I thought....

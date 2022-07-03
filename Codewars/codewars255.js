@@ -8,3 +8,5 @@
 function SafeInteger(n) {
     return n <  Number.MAX_SAFE_INTEGER || - n > - Number.MAX_SAFE_INTEGER
 }
+
+// also correct is Number.isSafeInteger
