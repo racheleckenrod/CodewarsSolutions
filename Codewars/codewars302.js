@@ -16,12 +16,13 @@
 
 
 function changeMe(moneyIn){
+    let coin = "20p "
     if(moneyIn === "£5"){
-        return "20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p 20p"
+        return coin.repeat(25)
     }else if(moneyIn === "£2"){
-        return "20p 20p 20p 20p 20p 20p 20p 20p 20p 20p"
+        return coin.repeat(10)
     }else if(moneyIn === "£1"){
-        return "20p 20p 20p 20p 20p"
+        return coin.repeat(5)
     }else if(moneyIn == "50p"){
         return "20p 20p 10p"
     }else if(moneyIn === "20p"){
