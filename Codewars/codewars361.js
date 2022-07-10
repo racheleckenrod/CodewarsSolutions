@@ -40,3 +40,10 @@ class Labrador extends Dog{
       this.loyal = true;
     }
   }
+
+//   ok at how it can be shortened further!!
+// class Labrador extends Dog {
+//     constructor(name, age, gender, master) {
+//       super(name, age, gender, "Labrador", "Large", master, true);
+//     }
+//   }
