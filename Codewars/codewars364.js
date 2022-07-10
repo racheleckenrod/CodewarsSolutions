@@ -33,8 +33,8 @@ function equal4(){
   return a/b;
 }
 function equal5(){
-  var a=  v2 //set number value to a
-  var b=  v4 //set number value to b
+  var a=  v2 //set number value to a 100
+  var b=  v4 //set number value to b 200
   console.log(a%b)
   return a%b;
 }
