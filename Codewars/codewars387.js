@@ -57,3 +57,7 @@
       return value.reduce((acc,c) => acc + c,0)
     }
 //   it may not be the best but I had no idea what the "preloaded hashtable" meant- and I was able to figure out a way to find out and use it. I am pleased. I would have like to use a better way than the looping I did... but I am still unsure of using forEach...
+
+// var scrabbleScore = str => str.toUpperCase().split('').reduce((p, c) => p + ($dict[c] || 0), 0);
+
+// I see I could have donr it in one step inside of the reduce method. I refactored my code and posted it on codewars.
