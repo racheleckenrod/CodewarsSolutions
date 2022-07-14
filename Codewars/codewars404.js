@@ -52,3 +52,5 @@ function scale(string, k, n) {
 }
 
 console.log(scale("abcd\nefgh\nijkl\nmnop",2,3))
+
+// a map inside of a map...
