@@ -27,3 +27,5 @@ function getMiddle(s){
     }
   //Code goes here!
 }
+
+// lots of solutions using slice for this one
