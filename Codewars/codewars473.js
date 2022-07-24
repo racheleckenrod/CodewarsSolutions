@@ -26,3 +26,10 @@ var number=function(array){
     return arr
     //your awesome code here
   }
+
+//   could start thinking to use map
+
+// var number = function(array) {
+//     return array.map((item, index) => `${index + 1}: ${item}`);
+//   }
+  
