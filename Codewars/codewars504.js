@@ -21,3 +21,6 @@ function last(x){
 
 }
 console.log(last('man i need a taxi up to ubud'))
+
+
+// this one got me a little ... my first approach was very similar to the solution I ended up with, but I didn't think of using the charCodeAt method on my own, I was using the length-1 which was not working for the tests.
