@@ -11,3 +11,11 @@ function findUniq(arr) {
    return arr.filter((item) => arr.indexOf(item) === arr.lastIndexOf(item))
   }
   
+//   oops.. pushed it the first time and then remembered this code didn't pass- it was returning an array and they only wanted a number
+
+// here is the code I actually posted:
+
+function findUniq(arr) { 
+    let num = arr.filter((item) => arr.indexOf(item) === arr.lastIndexOf(item))
+    return +num.toString()
+  }
