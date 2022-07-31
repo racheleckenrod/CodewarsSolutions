@@ -45,51 +45,96 @@
 
 
 
-var orderedCount = function (text) {
-    let arr = []
-    for (let i = 0; i < text.length; i++){
-       let count = 0
-       for (var j = 0; j < arr.length; j++)
-    
-    //    console.log( arr[j][0], text[j],text[i])
-          if (arr[j][0] == text[i])
-          
-              count =+ 1
-              console.log(count, "count", text[i], arr)
-        if (count == 0){
-          for (let j = i; j<text.length; j++)
-            if (text[j] == text[i])
-               count += 1
-               console.log(text[i], count)
-            arr.push([text[i],count]);
-            console.log(j,i)
-         }
-    }
-    console.log(arr)
-    return arr
-  
-    // let arr = []
-    // let count = 1
-    // text = text.split('')
+// var orderedCount = function (text) {
+//     let arr = []
+//     for (let i = 0; i < text.length; i++){
+//        let count = 0
+//        for (var j = 0; j < arr.length; j++)
 
-    // for(let i = 0; i < text.length; i++){
-    //     for(let j = text.length; j > 0; j--){
-    //         if(text[i] === text[j]){
-    //             console.log(text[i])
-    //             count += 1
-              
-             
-    //             // console.log(count,text, text[i],j, text[j])
-               
-    //         }
-            
-    //     }
        
-    //     arr.push([text[i], count])
-    //     // arr.splice()
-    //         count = 0
-    // }
-    // // Implement me!
-    // return arr
-  }
-  console.log(orderedCount("abracadabra"))
+    
+//     //    console.log( "abc")
+//           if (arr[j][0] == text[i])
+//         //   console.log(count)
+//               count =+ 1
+//               console.log(count, "count", text[i], arr)
+//         if (count == 0){
+//           for (let j = i; j<text.length; j++)
+//             if (text[j] == text[i])
+//                count += 1
+//             //    console.log(text[i], count)
+//             arr.push([text[i],count]);
+//             // console.log(j,i)
+//          }
+    
+// }
+//     // console.log(arr)
+//     return arr
+// var orderedCount = function (text) {
+//     let arr = [[0,0]]
+//     let count = 1
+//     text = text.split('')
+
+//     for(let i = 0; i < text.length; i++){
+//         for(let j = text.length; j > 0; j--){
+//             if(text[i] === text[j]){
+               
+//                 count += 1
+//                 console.log(text[i])
+//             }
+            
+//         }
+//         // for(let k = 0; k < 6; k++){
+//             // if(arr[k][0] == undefined || arr[k][0] !== text[i])
+//             console.log('test')
+//         // arr.push([text[i], count])
+//         // count = 0
+//         // console.log(arr)
+//     // }
+//     for(let k = 0; k < arr.length; k++){
+
+//         // arr.push([text[i], count])
+//         // console.log(arr[k][0])
+//         if(arr[k][0] == text[i]){
+//             console.log(i,text[i],"pineapple")
+//             // arr.pop()
+//             continue
+        
+//         }
+//         else{
+//             arr.push([text[i], count, k])
+//             k = arr.length
+        
+           
+//         }
+//         count = 0
+//     }
+//     // }
+//     }
+//     // Implement me!
+//     return arr
+//   }
+
+
+//   after many tries to work out this method, I am ready to new something new, perhaps creating a new array with unique values from text then counting how many times those appear in the original will work.
+
+var orderedCount = function (text) {
+    let arr = [...new Set(text)]
+    let newArr = []
+    let count = 0
+    console.log(arr)
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < text.length; j++){
+            if(arr[i] === text[j]){
+                count += 1
+            }
+        }
+        newArr.push([arr[i], count])
+        count = 0
+    }
+    return newArr
+}
+
+
+
+console.log(orderedCount("abracadabra"))
