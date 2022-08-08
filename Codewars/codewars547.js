@@ -5,7 +5,7 @@
 function bump(x){
     x = x.split("")
     let y = x.filter((item) => item === 'n')
-    if(y <= 15){
+    if(y.length <= 15){
         return 'Woohoo!'
     }else{
         return 'Car Dead'
