@@ -23,7 +23,7 @@ function modifyMultiply (str,loc,num) {
     console.log(d)
     return d.join("-").slice(0,-1)
     } 
-sole.log( modifyMultiply ("This is a string",3,5) )
+console.log( modifyMultiply ("This is a string",3,5) )
     // Should return)
 
 // after seeing the code on solutions I refactored my code, taking out the unnecessary split and join when I added the "-" instead of just a space... 
