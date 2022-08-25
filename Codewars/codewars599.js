@@ -57,3 +57,5 @@ function compose(s1, s2) {
     return s3.join("\n")
 }
 console.log(compose("byGt\nhTts\nRTFF\nCnnI", "jIRl\nViBu\nrWOb\nNkTB"))
+
+// quite happy with this passing, only missed first try by the last part and got it wrong with s2.length - (i +1)) instead of just the i ... then tried the minus 2 instead of fixing it the right way.. ugh, but ultimatly happy with the speed I was able to accomplish this kata in.
