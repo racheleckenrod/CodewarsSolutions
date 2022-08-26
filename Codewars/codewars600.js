@@ -30,68 +30,68 @@
 
 // stops at three because word.length/2 = 3  so can we make code that adds up a variable then subtracts it and quits when it gets to zero? like a for loop that has a if(count === .length) run the second part. we have to do this for each word (even number of letters)
 
-function insideOut(x){
-    x = x.split(' ')
-    let y = []
-    let word = []
-    let count = 0
-    for(let i = 0; i < x.length; i++){
-        // is word even or odd
-        if( x[i].length % 2 === 0){
-            console.log("even")
-            // for even lettered words
+// function insideOut(x){
+//     x = x.split(' ')
+//     let y = []
+//     let word = []
+//     let count = 0
+//     for(let i = 0; i < x.length; i++){
+//         // is word even or odd
+//         if( x[i].length % 2 === 0){
+//             console.log("even")
+//             // for even lettered words
 
-            for(let j = 0; j < x[i].length/2; j++){
-                console.log(x[i][x[i].length/2 - 1 - j])
-                word.push(x[i][x[i].length/2 - 1 - j])
-                count += 1
-            }
-            if(count >= x[i].length/2){
-                for(let k = 0; k < count; k++){
-                    console.log("second")
-                    word.push(x[i][x[i].length - (k + 1)])
+//             for(let j = 0; j < x[i].length/2; j++){
+//                 console.log(x[i][x[i].length/2 - 1 - j])
+//                 word.push(x[i][x[i].length/2 - 1 - j])
+//                 count += 1
+//             }
+//             if(count >= x[i].length/2){
+//                 for(let k = 0; k < count; k++){
+//                     console.log("second")
+//                     word.push(x[i][x[i].length - (k + 1)])
                 
-                }
+//                 }
                
-            }
-            count = 0
-            y.push(word.join(""))
-            word = []
-        }else if(x[i].length === 1){
-            y.push(x[i])
+//             }
+//             count = 0
+//             y.push(word.join(""))
+//             word = []
+//         }else if(x[i].length === 1){
+//             y.push(x[i])
 
-        }else{
-            console.log("ODD")
-            for(let j = 0; j < Math.floor(x[i].length/2) ; j++){
-                console.log(x[i][Math.floor(x[i].length/2) - 1 - j])
-                word.push(x[i][Math.floor(x[i].length/2) - 1 - j])
-                count += 1
+//         }else{
+//             console.log("ODD")
+//             for(let j = 0; j < Math.floor(x[i].length/2) ; j++){
+//                 console.log(x[i][Math.floor(x[i].length/2) - 1 - j])
+//                 word.push(x[i][Math.floor(x[i].length/2) - 1 - j])
+//                 count += 1
             
-            if(count === Math.floor(x[i].length/2)){
-                console.log("Middle", Math.floor(x[i].length/2), x[i])
-                word.push(x[i][Math.floor(x[i].length/2)])
-                console.log("word", word)
-                count +=1
-            }
-            if(count > x[i].length/2){
-                for(let k = 0; k < count -1; k++){
-                    console.log("second Odd")
-                    word.push(x[i][x[i].length - (k + 1)])
-                    console.log(word, "after")
+//             if(count === Math.floor(x[i].length/2)){
+//                 console.log("Middle", Math.floor(x[i].length/2), x[i])
+//                 word.push(x[i][Math.floor(x[i].length/2)])
+//                 console.log("word", word)
+//                 count +=1
+//             }
+//             if(count > x[i].length/2){
+//                 for(let k = 0; k < count -1; k++){
+//                     console.log("second Odd")
+//                     word.push(x[i][x[i].length - (k + 1)])
+//                     console.log(word, "after")
                 
-                }
+//                 }
                
-            }
-        }
-            count = 0
-            y.push(word.join(""))
-            word = []
+//             }
+//         }
+//             count = 0
+//             y.push(word.join(""))
+//             word = []
         
-        }
-    }
-    return y.join(" ")
+//         }
+//     }
+//     return y.join(" ")
 
-}
+// }
 console.log(insideOut('man i need a taxi up to ubud'))
 
 // a little cleaned up:
