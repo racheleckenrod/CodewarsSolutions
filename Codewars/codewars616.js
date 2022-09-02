@@ -31,3 +31,6 @@ function swapVowelCase(str) {
     return str.join("")
   }
   console.log(swapVowelCase("I have the best Ideas"))
+
+
+//   Strings are immutable. I tried to replace the str[i] for too long before checking it out that it wont go because strings are immutable. this is WHY we turn them in to arrays all the time.
