@@ -7,7 +7,7 @@
 // Enjoy it!!
 
 // PREP
-// This is a prototype create a method problem. which will most likely need to use the .this to select the given input. I dont know how to do a for loop with the .this
+// This is a prototype create a method problem. which will most likely need to use the .this to select the given input. I am still quite intimidated by the Array.prototype.remove_ syntax. 
 
 Array.prototype.remove_ = function(integer_list, values_list){
    integer_list.filter(element => !values_list.includes(element))
