@@ -9,11 +9,11 @@
 
 // Here's a nice Youtube video about currying, which might help you if this is new to you.
 
-// function multiplyAll(arr, num){
-//     return arr.map((item) => item * num)
+function multiplyAll(arr, num){
+    return arr.map((item) => item * num)
 
-// }
-
+}
+// although that function works, the challange here was to write a currying function.
 let multiplyAll =
     arr =>
         num =>
