@@ -20,6 +20,8 @@
 // we are to return the sum of the two numbers that occur only once.
 // Pseudocode"
 // first and last index of will be the same for the numbers occurringonly once. we need to get two of them, this may be tricky. then sum them.
+// glad I thought of putting the two values into an array and then reducing it. no so tricky that way.
+// I had some trouble still using the indexOf() method getting the arr[i] inside the parentheses instead of using the index i, seem too much with the arr. and then using the arr[i], but it is correct.
 
 function repeats(arr){
     let x = []
