@@ -51,3 +51,5 @@ function secondLargest(array){
     if(nums.length === 1) return undefined
       return +nums[1]
   }
+
+//   this one took me to the docs to brush up on some of the particulars about NaN and how the typeof method works. I ended up scrapping a patching approacha nd went with the isNaN method to filter things out that weren't being converted to a number. 
