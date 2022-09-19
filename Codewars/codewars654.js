@@ -20,3 +20,17 @@ function clean(arr) {
     return arr.filter(function() { return true; });
    }
    
+
+//    another way, similar to one way I tried, but this one passes:
+
+// function clean(arr) {
+//     let array = []
+//     for(let i = 0; i < arr.length; i++){ 
+//     if (i in arr){
+//       array.push(arr[i])
+                
+//     }  
+      
+//       }  
+//     return array;
+//   }
