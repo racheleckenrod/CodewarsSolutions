@@ -20,4 +20,3 @@ function arrMultiply(arr){
     //your solution
     
  }
-//  making comments
