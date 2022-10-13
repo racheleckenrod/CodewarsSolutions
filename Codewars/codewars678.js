@@ -103,3 +103,8 @@ function getCurrentHand(arr) {
 // baby steps-
 //  I used to think of baby steps as just small steps
 // today, my idea of "baby steps" has expanded to include more of the circumstances surrounding the action, the environment- and not just on the physical plane (3D) but mentally (4D) and I suppose spiritually (5D). Fully understanding the differences in dimention being similar to the naming of the colors- it is arbitrary and standardized, in other words, refering to the measurement of the frequency of the wave (electromagnetic wave) that we are talking about- I suspect that the ability to talk about things led to the naming of the dimensions, and many people have differing ideas of what that is. 
+// anyway, Baby Steps
+// What I didn't see:
+// all the prep work
+// baby steps begin long before they can run,
+// 
