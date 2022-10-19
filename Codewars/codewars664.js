@@ -37,72 +37,96 @@
 // we have the return array, grey, that will have a value in it to 
 
 
-function shadesOfGrey(n){
-    let grey = []
-    let temp = ["#00"]
-    let charCode 
-    let firstHex
-    if(n <= 0){
-        return grey
-    }else if(n > 254){
-        n = 254
-    }
-    for(let i = 0; i < n; i++){
+// function shadesOfGrey(n){
+//     let grey = []
+//     let temp = ["#00"]
+//     let charCode 
+//     let firstHex
+//     if(n <= 0){
+//         return grey
+//     }else if(n > 254){
+//         n = 254
+//     }
+//     for(let i = 0; i < n; i++){
        
-       console.log(temp[0].codePointAt(2), "test", temp)
+//        console.log(temp[0].codePointAt(2), "test", temp)
        
-       if(temp[0].codePointAt(2) < 57){
-        firstHex = temp[0].codePointAt(1)
-        charCode = temp[0].codePointAt(2)
-        charCode += 1
-        temp = [String.fromCharCode(35, firstHex, charCode, firstHex, charCode, firstHex, charCode)]
-        // console.log(temp)
-        grey.push(temp)
-        // console.log(grey)
+//        if(temp[0].codePointAt(2) < 57){
+//         firstHex = temp[0].codePointAt(1)
+//         charCode = temp[0].codePointAt(2)
+//         charCode += 1
+//         temp = [String.fromCharCode(35, firstHex, charCode, firstHex, charCode, firstHex, charCode)]
+//         // console.log(temp)
+//         grey.push(temp)
+//         // console.log(grey)
 
-       }else if(temp[0].codePointAt(2) === 57){
+//        }else if(temp[0].codePointAt(2) === 57){
      
-        firstHex = temp[0].codePointAt(1)
+//         firstHex = temp[0].codePointAt(1)
 
-        charCode = 97
+//         charCode = 97
 
-        temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
-        grey.push(temp)
-       }else if(temp[0].codePointAt(2) >= 97 && temp[0].codePointAt(2) < 102){
-        console.log("checking")
-        firstHex = temp[0].codePointAt(1)
-        charCode += 1
-        temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
-        grey.push(temp)
-       }else if(temp[0].codePointAt(2) === 102){
-        firstHex = temp[0].codePointAt(1)
-            if(firstHex < 57){
-                console.log("OR", firstHex)
-                firstHex += 1
-                charCode = 48
-                temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
-                grey.push(temp)
-            }
-            else if(firstHex === 57){
-            //     console.log("else")
-                firstHex = 97
-                charCode = 48
-                temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
-                grey.push(temp)
+//         temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
+//         grey.push(temp)
+//        }else if(temp[0].codePointAt(2) >= 97 && temp[0].codePointAt(2) < 102){
+//         console.log("checking")
+//         firstHex = temp[0].codePointAt(1)
+//         charCode += 1
+//         temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
+//         grey.push(temp)
+//        }else if(temp[0].codePointAt(2) === 102){
+//         firstHex = temp[0].codePointAt(1)
+//             if(firstHex < 57){
+//                 console.log("OR", firstHex)
+//                 firstHex += 1
+//                 charCode = 48
+//                 temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
+//                 grey.push(temp)
+//             }
+//             else if(firstHex === 57){
+//             //     console.log("else")
+//                 firstHex = 97
+//                 charCode = 48
+//                 temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
+//                 grey.push(temp)
 
-            }else if(firstHex > 57){
-                firstHex += 1
-                charCode = 48
-                temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
-                grey.push(temp)
-            }
-       }
+//             }else if(firstHex > 57){
+//                 firstHex += 1
+//                 charCode = 48
+//                 temp = [String.fromCharCode(35,firstHex, charCode, firstHex, charCode, firstHex, charCode)]
+//                 grey.push(temp)
+//             }
+//        }
 
-    }
+//     }
    
-    return grey.flat(1)
+//     return grey.flat(1)
 
-}
-console.log(shadesOfGrey(220))
+// }
+// console.log(shadesOfGrey(220))
 
 // I know I did this a hard way, but I wanted to see it through and I did
+
+function shadesOfGrey(n) {
+    var shades = []
+    
+    for (var i = 1; i <= Math.min(n, 254); i++) {
+      var grey = ('0' + i.toString(16)).slice(-2)
+      shades.push('#' + grey + grey + grey)
+    }
+    
+    return shades
+  }
+
+  function hexing(n) {
+    let greys = []
+    let grey 
+    for (let i = 0; i < n; i++){
+        grey = i.toString(16)
+        greys.push(grey)
+    }
+    return greys
+  }
+  console.log(hexing(77))
+
+//   much simpler and I won't likely do the long hard way again, and am glad to see the the toString(16) method actually outputting the letter/number combos.
