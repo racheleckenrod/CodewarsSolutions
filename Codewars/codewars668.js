@@ -19,7 +19,7 @@ function solve(s){
             upper += 1
         }else if(s[i] === s[i].toLowerCase() && s[i] !== s[i].toUpperCase()){
             lower += 1
-        }else if(s[i] > 0){
+        }else if(s[i] >= 0){
             num += 1
         }else{
             other += 1

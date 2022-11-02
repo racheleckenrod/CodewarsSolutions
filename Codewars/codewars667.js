@@ -23,9 +23,7 @@ function vowelOne(s){
     let nums = []
     s = s.split("")
     for(let i = 0; i < s.length; i++){
-        console.log(s[i])
         if(s[i].toLowerCase() === "a" || s[i].toLowerCase() === "e"  ||s[i].toLowerCase() === "i"  || s[i].toLowerCase()  === "o"  || s[i].toLowerCase() === "u"){
-            console.log(s[i])
             nums.push(1)
         }else{
             nums.push(0)

@@ -7,7 +7,7 @@
 
 
 function squares(x, n) {
-    if(x < 1) return []
+    if(n < 1) return []
     let arr = [x]
     for(let i = 1; i < n; i++){
         arr.push((arr[arr.length - 1]) * (arr[arr.length - 1]))
@@ -15,3 +15,5 @@ function squares(x, n) {
     return arr
 }
 console.log(squares(5,3))
+
+// needed to change the x to n for testing the length of the array..
