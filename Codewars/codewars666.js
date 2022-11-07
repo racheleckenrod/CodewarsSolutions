@@ -86,7 +86,7 @@
 // Pseudocode:
 // since we have positive and negative numbers, I think it would be best to take each element and compare it to the summ of the rest and push it into a new array if it is. use a for loop that starts at index 0, checks for edge case that it is the last one, compare to zero and push it if it is greater than zero. else, sum the array at index + 1 to the end and then compare that to see if element index 0 is greater than the sum, and if it is, push it to the new array.
 
-// I'm thinking to split the original array at the index 
+// I'm thinking to split the original array at the index slice worked well.
 
 
 function arrayLeaders(numbers){
