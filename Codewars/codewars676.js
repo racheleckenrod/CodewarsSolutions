@@ -15,14 +15,14 @@
 function fizzbuzz(n){
     let arr = []
   for(let i = 1; i <= n; i++){
-    if(n % 5 === 0 && n % 3 === 0){
+    if(i % 5 === 0 && i % 3 === 0){
         arr.push("FizzBuzz")
-    }else if(n % 5 === 0){
+    }else if(i % 5 === 0){
         arr.push("Buzz")
-    }else if(n % 3 === 0){
+    }else if(i % 3 === 0){
         arr.push("Fizz")
     }else{
-        arr.push(n)
+        arr.push(i)
     }
   }
   return arr
