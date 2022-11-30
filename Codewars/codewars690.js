@@ -59,3 +59,5 @@ function sc(apple){
     }
     
   }
+
+//   new comments
