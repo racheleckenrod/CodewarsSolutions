@@ -74,4 +74,4 @@ function declareWinner(fighter1, fighter2, firstAttacker) {
         }   
     }
 }
-  
+//   this was the second time I saw this challenge, Looks like I was unable to complete it the first time
