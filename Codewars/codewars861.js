@@ -34,11 +34,10 @@
 function unluckyDays(year){
     let count = 0
     
-    for(let i = 1; i <= 12; i++){
-        let month = i.toString().padStart(2,"0")
-        let theFifteenth = new Date(`${year}-${month}-15`).toString()
-
-        if(theFifteenth.startsWith('Fri')){
+    for(let i = 0; i < 12; i++){
+        let theThirteenth = new Date(year, i, 13)
+        console.log(theThirteenth)
+        if(theThirteenth.toString().startsWith('Fri')){
             count += 1
         }
     }
