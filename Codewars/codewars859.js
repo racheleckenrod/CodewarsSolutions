@@ -35,3 +35,5 @@ console.log(nums)
   
 
   console.log(sumOfIntegersInString("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy.4"))
+
+//   lots of checking with chat gpt about regex on this one.. learned the ^ is the not character
