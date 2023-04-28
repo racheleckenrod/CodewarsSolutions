@@ -16,8 +16,8 @@ function twoOldestAges(ages){
     let largest = []
     ages.sort((a,b) => a - b)
     largest = ages.slice(-2)
-        console.log(largest, ages)
-    return largest.reverse()
+
+    return largest
 }
 
 console.log(twoOldestAges([1,5,87,45,8,8]))
