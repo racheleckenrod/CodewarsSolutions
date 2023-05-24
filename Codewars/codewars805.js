@@ -21,22 +21,17 @@
 //       assert.deepEqual(solve([1,2,1,2,1,1,3]),[2,1,3]);
 //     });
 //   });
+// pseudocode:
 // if(arr[i] = arr[j] ){
     // remove arr[i]
 // }
-
+// didn't work out so well, try reversing the array and reversing it back
 
 function solve(arr) {
-    for(let i = 1; i < arr.length; i++){
-        for(let j = 0; j < arr.length; j++){
-            if(arr[j] === arr[i]){
-            console.log(arr[j],arr[i])
-
-            }
-
-        }
-    }
-    return arr;
+    arr = arr.reverse()
+    let values = [... new Set(arr)]
+   
+    return values.reverse()
   }
 
-  console.log(solve([1,2,1,2,1,1,3]))
+  console.log(solve([1,1,4,5,1,2,1]))
