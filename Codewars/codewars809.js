@@ -40,3 +40,6 @@ function f(n){
         return arr.reduce((acc, c) => +acc + +c,0)
     }else return false
     };
+
+
+    // use mathematical formula of  n * (n + 1) / 2 = sum of numbers from 1 to number
