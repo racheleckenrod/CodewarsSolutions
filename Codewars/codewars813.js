@@ -30,7 +30,7 @@
 // Example
 
 // Pseudocode:
-// create count , while loop for length > 2, do divide by 1and floor number to get remove last digit, then get that digit by finding the remainer of dividing by 10, multiply it by two and subtract it from the new m(that was divided by ten)
+// create count , while loop for length > 2, do divide by 10 and floor number to  remove last digit, then get that digit by finding the remainer of dividing by 10, multiply it by two and subtract it from  m / 10 to get new m
 
 function seven(m) {
     let count = 0
