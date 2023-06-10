@@ -9,7 +9,7 @@
 
 // Good luck!
 
-// use charCodeAt() to get the value, subtract 65 so that A is zero - that will correspond to the index in the array. need to turn arr into a string
+// use charCodeAt() to get the value, subtract 64 so that A is one. add one to index each time to compare the values with position - that will correspond to the index in the array. 
 
 function solve(arr){  
     let result = []
