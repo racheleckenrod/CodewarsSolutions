@@ -28,30 +28,30 @@
 
 
 
-// function solution(list){
-//     let string = []
+function solution(list){
+    let string = []
 
-//     for(let i = 0; i < list.length; i++){
-//         let start = list[i]
-//         let end = start
+    for(let i = 0; i < list.length; i++){
+        let start = list[i]
+        let end = start
 
-//         while(list[i + 1] === end + 1){
-//             end = list[i + 1]
-//             i++
-//         }
-//             if(start === end ){
-//                 string.push(start)
-//             }else if (start + 1 === end){
-//                 string.push(start, ',', end)
-//             }else{
-//                 string.push(start, '-', end)
-//             }
+        while(list[i + 1] === end + 1){
+            end = list[i + 1]
+            i++
+        }
+            if(start === end ){
+                string.push(start)
+            }else if (start + 1 === end){
+                string.push(start, ',', end)
+            }else{
+                string.push(start, '-', end)
+            }
 
-//             string.push(',')
-//     }
-//     string.pop()
-//     return string.join('')
-//    }
+            string.push(',')
+    }
+    string.pop()
+    return string.join('')
+   }
 
 
 
@@ -85,33 +85,34 @@
 
 
 
+// Most popular:
 
-function solution(individualIntegers) {
-    console.log(individualIntegers)
-	return individualIntegers
-		.reduce(splitIntoRanges, [])
-		.map(convertToRange)
-		.join(",");
-}
+// function solution(individualIntegers) {
+//     console.log(individualIntegers)
+// 	return individualIntegers
+// 		.reduce(splitIntoRanges, [])
+// 		.map(convertToRange)
+// 		.join(",");
+// }
 
-function splitIntoRanges(ranges, number) {
-    console.log("ranges=",ranges, "number=", number)
-	if (!ranges.length) {
-		ranges.push([number]);
-		return ranges;
-	}
+// function splitIntoRanges(ranges, number) {
+//     console.log("ranges=",ranges, "number=", number)
+// 	if (!ranges.length) {
+// 		ranges.push([number]);
+// 		return ranges;
+// 	}
 
-	var lastRange = ranges[ranges.length - 1];
-	var lastNumber = lastRange[lastRange.length - 1];
+// 	var lastRange = ranges[ranges.length - 1];
+// 	var lastNumber = lastRange[lastRange.length - 1];
 
-	number === lastNumber + 1 ? lastRange.push(number) : ranges.push([number]);
-    console.log('ranges=', ranges, "lastRange=", lastRange)
-	return ranges;
-}
+// 	number === lastNumber + 1 ? lastRange.push(number) : ranges.push([number]);
+//     console.log('ranges=', ranges, "lastRange=", lastRange)
+// 	return ranges;
+// }
 
-function convertToRange(range) {
-	return range.length < 3 ? range.join(",") : range[0] + "-" + range[range.length - 1];
-}
+// function convertToRange(range) {
+// 	return range.length < 3 ? range.join(",") : range[0] + "-" + range[range.length - 1];
+// }
 
 
 
