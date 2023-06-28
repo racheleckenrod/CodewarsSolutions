@@ -47,3 +47,18 @@ function firstNonRepeatingLetter(s) {
   }
 
   console.log(firstNonRepeatingLetter('moonmendd'))
+
+//   should have used method of indexOf() and lastIndexOf() and see if they match.
+
+function firstNonRepeatingLetter(s) {
+    let string = s.toLowerCase()
+
+    for(let i = 0; i < string.length; i++){
+        if(string.indexOf(string[i] === string.lastIndexOf(string[i]))){
+            return s[i]
+        }
+
+    }
+
+    return ''
+}
