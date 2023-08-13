@@ -37,8 +37,9 @@ function createDict(keys, values){
         }
     }
 
-    keys.forEach((key, index) => {obj[key] = values[index] || null })
+    keys.forEach((key, index) => {obj[key] = values[index]})
 
     return obj
     // ...
   }
+// corrected code
