@@ -70,3 +70,11 @@ function reverseBits(n) {
 
 }
 console.log(reverseBits(Number.MAX_SAFE_INTEGER), Number.MAX_SAFE_INTEGER);   
+
+// after my solutions like this didn't work, I find that this one does...
+function reverseBits(n) {
+    const binaryReverse = n.toString(2).split('').reverse().join('')
+    return parseInt(binaryReverse, 2)
+  }
+
+//   I see that I was not able to wrap the bits in Number... and keeping it a string proved to pass the tests
