@@ -18,6 +18,6 @@ function solution(pairs){
         }
     }
 
-    return `${string.join(", ")}`
+    return `${string.join(",")}`
     // TODO: complete
   }
