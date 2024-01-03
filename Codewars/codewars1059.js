@@ -22,17 +22,21 @@
 // });
 
 
-function absentVowel(x){
-    if (!x.includes("a")) {
-        return 0
-    } else if (!x.includes("e")) {
-        return 1
-    } else if (!x.includes("i")) {
-        return 2
-    } else if (!x.includes("o")) {
-        return 3
-    } else if (!x.includes("u")) {
-        return 4
-    }
+// function absentVowel(x){
+//     if (!x.includes("a")) {
+//         return 0
+//     } else if (!x.includes("e")) {
+//         return 1
+//     } else if (!x.includes("i")) {
+//         return 2
+//     } else if (!x.includes("o")) {
+//         return 3
+//     } else if (!x.includes("u")) {
+//         return 4
+//     }
 
+// }
+
+function absentVowel(x) {
+    return ['a', 'e', 'i', 'o', 'u'].findIndex(v => !x.includes(v))
 }
